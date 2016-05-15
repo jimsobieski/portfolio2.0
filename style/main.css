@@ -1,0 +1,264 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2 mars 2015, 18:43:05
+    Author     : JimSobieski
+*/
+
+body{
+    background-image:url(../images/fond.jpg);
+    background-attachment:fixed;
+}
+
+body section{
+    padding:10px;
+}
+
+section{
+    min-height:85%;
+    //overflow:scroll;
+}
+
+caption{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size:26px;
+    color:white;
+}
+
+.barre{
+    position:fixed;
+    z-index:5;
+    background-image:linear-gradient(white,#d8d8d8);
+    width:100%;
+    -moz-box-shadow: 2px 2px 25px 0px #343434;
+    -webkit-box-shadow: 2px 2px 25px 0px #343434;
+    -o-box-shadow: 2px 2px 25px 0px #343434;
+    box-shadow: 2px 2px 25px 0px #343434;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#343434, Direction=134, Strength=25);
+}
+
+.barre h1{
+    font-family: 'Raleway', sans-serif;
+    transition:0.4s;
+}
+
+strong{
+    font-weight:normal;
+}
+
+#linkedin-link{
+    color:black;
+    text-decoration:none;
+    transition: box-shadow 0.4s ease-in;
+}
+
+.name{
+    display:inline;
+}
+
+#linkedin-icon{
+    position:relative;
+    top:-2px;
+    left:5px;
+    width:18px;
+    background-color:white;
+    border-radius:100%;
+}
+
+#linkedin-link:hover .name{
+    box-shadow: inset 0 0px 0 white, inset 0 -1px 0 black;
+    transition:0.4s;
+}
+
+ul{
+    -webkit-padding-start:0px;
+    -moz-padding-start:0px;
+    -o-padding-start:0px;
+}
+
+ul,li{
+    display:inline;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size:25px;
+}
+ul li a{
+     box-sizing:border-box;
+     padding:.3em .2em;
+     color:#51C3FA;
+     text-decoration:none;
+     text-shadow:0 1px 0 whitesmoke;
+     background-color:transparent;
+     transition:background-color .3s ease;
+}
+
+a{
+    text-decoration:none;
+    color:#149c92;
+    transition:0.3s;
+}
+
+li a:hover{
+    color:#2376a6;
+    text-decoration:none;
+    //text-shadow: 1px 1px 8px #343434;
+    transition:box-shadow 0.3s ease-in;
+    
+}
+
+.selectpage{
+    box-shadow: inset 0 0px 0 white, inset 0 -1px 0 #2376a6;
+    color:#2376a6;
+    text-shadow: 1px 1px 6px #343434;
+}
+
+li a:hover + .selectpage{
+    box-shadow: inset 0 0px 0 white, inset 0 -1px 0 black;
+}
+
+.card-index{
+    height:250px;
+    background-image:linear-gradient(#f1f1f1,#f1f1f1);
+    transition:font-size 0.2s ease-in;
+    font-family: 'Open Sans Condensed', sans-serif;
+    -moz-box-shadow: 7px 7px 10px 0px #343434;
+    -webkit-box-shadow: 7px 7px 10px 0px #343434;
+    -o-box-shadow: 7px 7px 10px 0px #343434;
+    box-shadow: 7px 7px 10px 0px #343434;
+    transition:background-image 0.2s ease-in;
+    transition:box-shadow 0.2s ease-in;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#343434, Direction=134, Strength=15);
+}
+
+.card-index:hover{
+    background-image:linear-gradient(white,#d8d8d8);
+    -moz-box-shadow: 7px 7px 25px 0px #343434;
+    -webkit-box-shadow: 7px 7px 25px 0px #343434;
+    -o-box-shadow: 7px 7px 25px 0px #343434;
+    box-shadow: 7px 7px 25px 0px #343434;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#343434, Direction=135, Strength=25);
+    transition:box-shadow 0.2s ease-in;
+    transition:background-image 0.2s ease-in;
+}
+
+.card-index h2{
+    position:relative;
+    top:5px;
+}
+
+.card-index a{
+    display:block;
+    width:100%;
+    height:100%;
+    text-decoration:none;
+    
+}
+
+.card-index .design-card-img{
+    position:relative;
+    top:25px;
+}
+
+.profil .detail-profil{
+    position:relative;
+    top:-270px; 
+    color:black;
+    padding:12px;
+}
+
+.text-left:hover{
+    cursor:pointer;
+}
+
+.profil .detail-profil h3{
+    position:relative;
+    left:-42%;
+    font-family: 'Pacifico', cursive;
+    font-weight:bold;
+}
+
+.profil .detail-profil table{
+    font-size:0px;
+    transition:font-size 0.3s ease;
+    transform: scaleY(0);
+    transform-origin: -50% 0;
+    width:100%;
+}
+
+.detail-profil table td{
+    padding-top:12px;
+    padding-bottom:12px;
+}
+
+.profil img{
+    width:100%;
+    height:100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.profil:hover .detail-profil{
+    color:white;
+}
+
+.profil:hover .detail-profil table{
+    font-size:20px;
+    transition:font-size 0.2s ease-in-out;
+    transform: scaleY(1);
+    color:white;
+}
+
+.profil:hover img{
+    filter: grayscale(1) blur(5px) brightness(50%);
+        -webkit-filter: grayscale(1) blur(5px) brightness(50%);
+        -moz-filter: grayscale(1) blur(5px) brightness(50%);
+        -o-filter: grayscale(1) blur(5px) brightness(50%);
+        -ms-filter: grayscale(1) blur(5px) brightness(50%);
+        transition:-webkit-filter 0.2s ease-in;
+}
+
+.infos-comp table{
+    width:100%;
+    
+}
+
+.infos-comp table td{
+    padding:12px;
+    font-size:20px;
+}
+
+.competences{
+    -moz-box-shadow: 7px 7px 25px 0px #343434;
+    -webkit-box-shadow: 7px 7px 25px 0px #343434;
+    -o-box-shadow: 7px 7px 25px 0px #343434;
+    box-shadow: 7px 7px 25px 0px #343434;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#343434, Direction=135, Strength=25);
+}
+
+.logo{
+    width:80px;
+}
+
+#parcours, #realisation{
+    margin:auto;
+    width:auto;
+}
+
+footer{
+    margin-bottom:5px;
+    height:45px;
+    background-image:linear-gradient(#323232,black);
+    opacity:0.6; 
+}
+
+footer p {
+    position:relative;
+    top:12px;
+    text-align:center;
+    color:whitesmoke;
+}

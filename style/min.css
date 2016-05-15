@@ -1,0 +1,46 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2 mars 2015, 17:34:44
+    Author     : JimSobieski
+*/
+
+.barre h1{
+    margin-top:13px;
+    font-size:19px;
+}
+
+section,footer{
+    position:relative;
+    top:130px;
+}
+
+nav{
+    position:relative;
+    bottom:5px;
+    text-align:left;
+    margin-top:13px;
+}
+
+ul li{
+    margin-right:10px;
+    font-size:20px;
+}
+
+card-index{
+    width:auto;
+    margin-top:0px;
+    margin-bottom:20px;
+}
+
+.competences{
+    margin:auto;
+    width:auto;
+}
+
+#parcours{
+    top:80px;
+}

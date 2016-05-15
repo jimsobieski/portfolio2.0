@@ -1,0 +1,149 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19 oct. 2014, 19:28:15
+    Author     : JimSobieski
+*/
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+body,barre{
+    display:block;
+}
+
+body{
+    background-image:url(../images/fond.jpg);
+    width:auto;
+}
+
+ul,li{
+    display:inline;
+}
+
+h1{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size:30px;
+}
+
+#barre{
+    position:fixed;
+    width:100%;
+    height:auto;
+    z-index:20;
+    top:0px;
+    left:0px;
+    height:auto;
+    background-color: white;
+}
+
+#barre p{
+    position:relative;
+    width:200px;
+    left:25px;
+    font-family: 'Raleway', sans-serif;
+    font-size:1.5em;
+    color:black;
+    transition:0.4s;
+}
+
+#barre p:hover{
+    color:#df6a63;
+    transition:0.3s;
+}
+nav{
+    z-index:10;
+    top:20px;
+    font-size:25px;
+}
+
+li{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+a{
+    text-decoration:none;
+    color:#149c92;
+    transition:0.3s;
+}
+
+li a:hover{
+    color:#df6a63;
+    text-shadow: 2px 2px 5px #c6624e;
+    transition:0.3s;
+    
+}
+
+.active{
+    text-decoration:underline;
+    color:#df6a63;
+}
+
+#presentation{
+    position:relative;
+    top:150px;
+    font-family: 'Rokkitt', serif;
+    color:white;
+    font-size:40px;
+}
+
+#menu_index{
+    position:relative;
+    top:200px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size:21px;
+}
+
+#menu_index td{
+    text-align:center;
+    width:300px;
+    height:200px;
+    background-color: #f1f1f1;
+    transition:0.3s;
+}
+
+#menu_index td:hover{
+    background-color:#ffa68d;
+    transition:0.3s;
+}
+
+#menu_index a{
+    position:relative;
+    top:-120px;
+    left:60px;
+}
+
+#menu_index img{
+    position:relative;
+    top:150px;
+    left:-105px;
+}
+
+#bubulle {
+    background-color: #f1f1f1;
+    border: 1px solid #91b1db;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    -moz-box-shadow: 5px 5px 10px 0px #343434;
+    -webkit-box-shadow: 5px 5px 10px 0px #343434;
+    -o-box-shadow: 5px 5px 10px 0px #343434;
+    box-shadow: 5px 5px 10px 0px #343434;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#343434, Direction=134, Strength=10);
+}

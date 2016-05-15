@@ -1,0 +1,97 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 1 nov. 2014, 23:13:02
+    Author     : JimSobieski
+*/
+#realisation{
+    margin:auto;
+    width:auto;
+    -moz-box-shadow: 7px 7px 25px 0px #343434;
+    -webkit-box-shadow: 7px 7px 25px 0px #343434;
+    -o-box-shadow: 7px 7px 25px 0px #343434;
+    box-shadow: 7px 7px 25px 0px #343434;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#343434, Direction=135, Strength=25);
+}
+
+caption{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size:28px;
+    color:white;
+}
+
+#realisation img{
+    width:80px;
+    height:80px;
+}
+
+#realisation tr{
+    background-image:linear-gradient(#f1f1f1,#f1f1f1);
+    transition:0.3s;   
+}
+
+#realisation tr:hover{
+    background-image:linear-gradient(#f1f1f1,#9fabd0);
+    border-top:1px solid #1A237E;
+    border-bottom:1px solid #1A237E;
+    transition:background-color 0.3s ease-in;   
+    
+}
+
+.logo{
+    width:80px;
+}
+
+.real{
+    width:600px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size:23px;
+    color:#149c92;
+    padding-top:10px;
+    padding-bottom:15px;
+    padding-left:40px;
+    padding-right:10px;
+}
+
+td:hover .real{
+    font-size:21px;
+    transition:font-size 0.3s ease;
+    bottom:35px;
+}
+
+.real p{
+    display:inline;
+}
+
+.rapport a{
+    position:relative;
+    top:2px;
+    float:right;
+    font-size:18px;
+    color:#1A237E;
+    text-decoration:underline;
+}
+
+td .wait2{
+    position:relative;
+    font-family: 'Abel', sans-serif;
+    top:12px;
+    font-size:0px;
+    transition:font-size 0.3s ease;
+    transform: scaleY(0);
+    transform-origin: -50% 0;
+    
+}
+
+tr:hover td .wait2{
+    font-size:17px;
+    transition:font-size 0.2s ease;
+    transform: scaleY(1);
+    color:black;
+    text-shadow: 2px 2px 8px whitesmoke;
+    text-justify: auto;
+    width:100%;
+}

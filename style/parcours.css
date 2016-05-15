@@ -1,0 +1,60 @@
+#parcours{
+    -moz-box-shadow: 7px 7px 25px 0px #343434;
+    -webkit-box-shadow: 7px 7px 25px 0px #343434;
+    -o-box-shadow: 7px 7px 25px 0px #343434;
+    box-shadow: 7px 7px 25px 0px #343434;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#343434, Direction=135, Strength=25);
+}
+
+#parcours img{
+    width:50px;
+    height:50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#parcours tr{
+    background-image:linear-gradient(#f1f1f1,#f1f1f1);
+    transition:0.3s;
+}
+
+#parcours tr:hover{
+    background-image:linear-gradient(#f1f1f1,#9fabd0);
+    border-top:1px solid #1A237E;
+    border-bottom:1px solid #1A237E;
+    transition:background-image 0.3s ease-in;
+    
+}
+
+.lib_parcours{
+    width:600px;
+    vertical-align:middle;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size:20px;
+    padding-top:10px;
+    padding-bottom:15px;
+    padding-left:40px;
+    padding-right:10px;
+    color:#149c92;
+}
+
+.lib_parcours p {
+    display:inline;
+}
+
+.rapport a{
+    position:relative;
+    top:2px;
+    float:right;
+    font-size:18px;
+    color:#1A237E;
+    text-decoration:underline;
+}
+
+.date{
+    width:80px;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size:18px;
+    color:#149c92;
+}
