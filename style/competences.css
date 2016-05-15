@@ -1,59 +1,67 @@
-.competences img{
-    width:80px;
-    height:80px;
-}
-
-.competences tr{
-    background-image:linear-gradient(#f1f1f1,#f1f1f1);
-    transition:0.3s;   
-}
-
-.competences tr:hover{
-    background-image:linear-gradient(#f1f1f1,#9fabd0);
-    border-top:1px solid #1A237E;
-    border-bottom:1px solid #1A237E;
-    transition:background-color 0.3s ease-in;   
-}
-
-.language{
-    padding-top:10px;
-    padding-bottom:10px;
-    padding-left:50px;
+.competences-card{
+    height:200px;
+    background-image:linear-gradient(white,#d8d8d8);
+    -moz-box-shadow: 2px 2px 25px 0px #343434;
+    -webkit-box-shadow: 2px 2px 25px 0px #343434;
+    -o-box-shadow: 2px 2px 25px 0px #343434;
+    box-shadow: 2px 2px 25px 0px #343434;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#343434, Direction=134, Strength=25);
+    transition:box-shadow 0.2s ease-in;
+    transition:background-image 0.2s ease-in;
+    margin-bottom:5px;
+    margin-top:5px;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:10px;
     padding-right:10px;
-    width:400px;
 }
 
-.nomlanguage{
-    display:inline;
-    text-align:center;
-    margin-left:0px;
+.competences-card > h2 {
+    display:block;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size:23px;
-    color:#149c92;
+    text-align:center;
+    transition:display 0.2s ease-in;
 }
 
-td .wait{
+.competences-card > img{
+    display:block;
+    margin: 0 auto;
+    width:50%;
+    height:50%;
+    transition:display 0.2s ease-in;
+}
+
+.competences-card > p{
+    display:none;
+}
+
+.competences-card:hover{
+    background-image:linear-gradient(white,#d8d8d8);
+    -moz-box-shadow: 7px 7px 25px 0px #343434;
+    -webkit-box-shadow: 7px 7px 25px 0px #343434;
+    -o-box-shadow: 7px 7px 25px 0px #343434;
+    box-shadow: 7px 7px 25px 0px #343434;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#343434, Direction=135, Strength=25);
+    transition:box-shadow 0.2s ease-in;
+    transition:background-image 0.2s ease-in;
+}
+
+.competences-card:hover > h2{
+    display:inline;
     position:relative;
-    font-family: 'Abel', sans-serif;
-    top:10px;
-    font-size:0px;
-    transition:font-size 0.3s ease;
-    transform: scaleY(0);
-    transform-origin: -50% 0;
+    top:5px;
+    transition:display 0.2s ease-in;
 }
 
-tr:hover td .wait{
-    font-size:17px;
-    transition:font-size 0.2s ease;
-    transform: scaleY(1);
-    color:black;
-    text-shadow: 2px 2px 8px whitesmoke;
-    text-justify: auto;
-    width:100%;
+.competences-card:hover > img{
+    display:inline;
+    float:right;
+    transition:display 0.2s ease-in;
+    width:50px;
+    height:50px;
     
 }
 
-td:hover .language{
-    font-size:21px;
-    transition:font-size 0.3s ease;
+.competences-card:hover > p{
+    display:block;
 }

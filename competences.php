@@ -22,32 +22,36 @@ $gestionnaire = new Gestionnaire();
             <div class="row">
                 <div class="col-sm-offset-1 col-sm-5">
                     <?php
-                    echo"<table class='competences'><caption>LANGAGES DE PROGRAMMATION</caption>";
+                    $cmp = 0;
                     while ($ligne = $exec->fetch()) {
-                        echo"<tr><td class='logo'><img src=images/" . $ligne->fichier
-                                . "></td><td class='language'><p class='nomlanguage'>" . $ligne->nom 
-                                . "</p><p class='wait'>" . $ligne->description . "</p></td></tr>"; //79varchar
+                        if ($cmp == 2) {
+                            echo"</div>";
+                            $cmp = 0;
+                        }
+                        if ($cmp == 0) {
+                            echo "<div class='row'>";
+                        }
+                        ?>
+                        <div class="competences-card col-sm-offset-1 col-sm-5">
+                            <h2><?php echo $ligne->nom ?></h2>
+                            <img src="images/<?php echo $ligne->fichier ?>">
+                            <p><?php echo $ligne->description ?></p>
+                        </div>
+                        <?php
+                        $cmp++;
                     }
-                    echo"</table>";
                     ?>
                 </div>
                 <div class="col-sm-offset-1 col-sm-5">
                     <?php
                     $req = "select * from competence where type='log';";
                     $exec = $gestionnaire->requete($req);
-                    echo"<table class='competences'><caption>LOGICIELS</caption>";
-                    while ($ligne = $exec->fetch()) {
-                        echo"<tr><td class='logo'><img src=images/" . $ligne->fichier 
-                                . "></td><td class='language'><p class='nomlanguage'>" . $ligne->nom 
-                                . "</p><p class='wait'>" . $ligne->description . "</p></td></tr>";
-                    }
-                    echo"</table>";
                     ?>
                 </div>
             </div>        
         </section>
         <?php
-            require 'composants/footer.php';
+        require 'composants/footer.php';
         ?>
     </body>
 </html>
